@@ -574,10 +574,16 @@ address .contact {
 }
 
 .address-section {
+    width: 231px;
     margin-right: 70px;
 }
 
-.social-title {
+/* social links */
+.social-section {
+    margin-right: 93px;
+}
+
+.footer-title {
     margin-bottom: 20px;
 
     font-size: 14px;
@@ -597,6 +603,43 @@ address .contact {
     background-color: var(--accent-color);
 }
 
+/* subscribe to the newsletter */
+.form-subscribe{
+display: flex;
+}
+
+.mail-subscribe {
+    
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--secondary-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.mail-subscribe::placeholder {
+   position: absolute;
+}
+
+.button-subscribe {
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    display: flex;
+    align-items: center;
+}
+
+
+.button-subscribe span {
+    margin-right: 10px;
+}
 
 
 /* PORTFOLIO PAGE */

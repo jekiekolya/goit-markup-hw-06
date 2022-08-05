@@ -63,7 +63,7 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="modal-btn" data-modal-close>
-                        <svg width="11" height="11">
+                        <svg class="cross-icon" width="11" height="11">
                             <use href="./images/icons/icons.svg#icon-cross"></use>
                         </svg>
                     </button>
@@ -74,7 +74,7 @@
                         <label class="form-field">
                             <span class="form-label">Ім'я</span>
                             <div class="input-field">
-                                <input class="form-input" type="text" name="name">
+                                <input class="form-input" type="text" name="name" placeholder=" ">
                                 <svg class="form-icon">
                                     <use href="./images/icons/icons.svg#icon-person"></use>
                                 </svg>
@@ -84,7 +84,7 @@
                         <label class="form-field">
                             <span class="form-label">Телефон</span>
                             <div class="input-field">
-                                <input class="form-input" type="tel" name="phone-number">
+                                <input class="form-input" type="tel" name="phone-number" placeholder=" ">
                                 <svg class="form-icon">
                                     <use href="./images/icons/icons.svg#icon-phone"></use>
                                 </svg>
@@ -94,7 +94,7 @@
                         <label class="form-field">
                             <span class="form-label">Пошта</span>
                             <div class="input-field">
-                                <input class="form-input" type="email" name="user-email">
+                                <input class="form-input" type="email" name="user-email" placeholder=" ">
                                 <svg class="form-icon">
                                     <use href="./images/icons/icons.svg#icon-email"></use>
                                 </svg>
@@ -103,12 +103,18 @@
                             
                         <label class="form-field">
                             <span class="form-label">Коментар</span>
-                                <textarea class="form-comment" name="comment" rows="5" placeholder="Введіть текст"></textarea>
+                                <textarea class="form-comment form-input" name="comment" rows="5" placeholder="Введіть текст"></textarea>
                         </label>
                         
                         <label class="form-field checkbox-field">
                             <input class="checkbox" type="checkbox" name="confirm">
-                            <span class="checkbox-label">Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a> </span>
+                            <svg class="icon-check-empty" width="15px" height="15px">
+                                <use href="./images/icons/icons.svg#icon-check-empty"></use>
+                            </svg>
+                            <svg class="icon-check" width="15px" height="15px">
+                                <use href="./images/icons/icons.svg#icon-check"></use>
+                            </svg>
+                            <span class="checkbox-label">Погоджуюся з розсилкою та приймаю <a href="" class="link" target="_blank">Умови договору</a> </span>
                         </label>
 
                         <button class="primary-button form-btn" type="submit">Відправити</button>

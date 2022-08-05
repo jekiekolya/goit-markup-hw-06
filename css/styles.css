@@ -339,6 +339,13 @@ nav .link:focus::after {
     background: var(--primary-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    transition: fill 250ms var(--time-function);
+}
+
+.modal-btn:hover,
+.modal-btn:focus  {
+    fill: var(--accent-color);
 }
 
 /* Modal form */
@@ -385,6 +392,16 @@ nav .link:focus::after {
 
     border: 1px solid rgba(33, 33, 33, 0.2);;
     border-radius: 4px;
+    transition: border-color 250ms var(--time-function);
+}
+
+.form-field:focus-within .form-input {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.form-input:not(:placeholder-shown) {
+    border-color: var(--accent-color);
 }
 
 .form-icon {
@@ -393,6 +410,16 @@ nav .link:focus::after {
     left: 12px;
     width: 18px;
     height: 18px;
+
+    transition: fill 250ms var(--time-function);
+}
+
+.form-field:focus-within .form-icon {
+    fill: var(--accent-color);
+}
+
+.form-input:not(:placeholder-shown)+.form-icon {
+    fill: var(--accent-color);
 }
 
 .form-comment {
@@ -403,6 +430,7 @@ nav .link:focus::after {
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
 }
 
 .form-comment::placeholder {
@@ -414,17 +442,40 @@ nav .link:focus::after {
 }
 
 .checkbox-field {
-    flex-direction: row;
+    position: relative;
     margin-left: 52px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .checkbox {
-    margin-right: 8px;
+    position: absolute;
+    appearance: none; 
+}
+
+.icon-check-empty {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--time-function),
+    background-color 250ms var(--time-function);
+    border-radius: 2px;
+}
+.icon-check {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: transparent;
+}
+
+.checkbox:checked + .icon-check-empty {
+    fill: var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 
 .checkbox-label {
+    margin-left: 24px;
     font-weight: 400;
     line-height: 1.71;
 }
@@ -434,9 +485,19 @@ nav .link:focus::after {
     color: var(--accent-color);
 }
 
+
+
 .form-btn {
     width: 200px;
+
+    transition: background-color 250ms var(--time-function);
 }
+
+.form-btn:hover,
+.form-btn:focus {
+    background: #188CE8;
+}
+
 
 /* Our adventages */
 .adventage {
@@ -721,6 +782,7 @@ display: flex;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    outline: none;
 }
 
 .mail-subscribe::placeholder {

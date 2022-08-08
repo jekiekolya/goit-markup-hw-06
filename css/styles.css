@@ -222,7 +222,6 @@ nav .link:focus::after {
 }
 
 .contact-icon {
-  display: block;
   margin-right: 10px;
   fill: currentColor;
 }

@@ -762,6 +762,12 @@ address .contact {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+
+  transition: border-color 250ms var(--time-function);
+}
+
+.mail-subscribe:focus-within {
+  border-color: var(--primary-white-color);
 }
 
 .mail-subscribe::placeholder {

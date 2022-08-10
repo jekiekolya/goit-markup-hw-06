@@ -663,18 +663,20 @@
 
         <!-- Subscribe to the newsletter  -->
         <div class="subscribe">
-          <label>
-            <h3 class="footer-title">Підпишіться на розсилку</h3>
-            <div class="form-subscribe">
-              <input class="mail-subscribe" type="email" name="email" placeholder="E-mail" />
-              <button class="primary-button button-subscribe" type="submit">
-                <span>Підписатися</span>
-                <svg width="24px" height="24px">
-                  <use href="./images/icons/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </label>
+          <form class="form-subscribe" name="form-subscribe" autocomplete="on">
+            <label>
+              <h3 class="footer-title">Підпишіться на розсилку</h3>
+              <div class="form-subscribe__field">
+                <input class="mail-subscribe" type="email" name="email" placeholder="E-mail" />
+                <button class="primary-button button-subscribe" type="submit">
+                  <span>Підписатися</span>
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
         </div>
       </div>
     </footer>

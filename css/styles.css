@@ -744,7 +744,7 @@ address .contact {
 }
 
 /* subscribe to the newsletter */
-.form-subscribe {
+.form-subscribe__field {
   display: flex;
 }
 
